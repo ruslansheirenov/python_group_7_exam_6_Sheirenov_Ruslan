@@ -7,6 +7,13 @@
     <title>Добавление записи</title>
 </head>
 <body>
-    
+
+    <h1>Все записи</h1>
+    {% for i in content %}
+        <p>{{ i.author }} ({{ i.email }})</p>
+        <p>{{ i.content }}</p>
+    {% endfor %}
+
+    <a href="http://localhost:8000/recording/add/">Добавить новую запись</a>
 </body>
 </html>
